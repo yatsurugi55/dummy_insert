@@ -111,7 +111,7 @@
        The file of a insert sql with some parameter markers. And you can 
        set to some sequence objects in the sql.
 
-       ex)
+       ex)  
          - INSERT INTO TABLE1 VALUES (?, ?, ?, ?, ?)  
          - INSERT INTO TABLE2 VALUES (NEXT VALUE FOR seq_obj, ?, ?)  
 
