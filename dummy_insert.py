@@ -19,9 +19,7 @@ class DummyInsert:
         args = self.get_option()
         dbname = args.dbname         # args1
         input_file = args.input_file # args2
-        rows = 1                     # args3
-        if args.rows is not None:
-            rows = args.rows       
+        rows = args.rows             # args3
 
         username = connect_conf.username
         password = connect_conf.password
@@ -173,12 +171,13 @@ class DummyInsert:
         argparser = ArgumentParser()
         argparser.add_argument('-d', '--dbname', type=str, required=True)
         argparser.add_argument('-f', '--input_file', type=str, required=True)
-        argparser.add_argument('-r', '--rows', type=int)
+        argparser.add_argument('-r', '--rows', type=int, default=1)
 
         args = argparser.parse_args()
        
         return args
 
+    # verify the table by using ibm_db api
     def chk_table(self, conn, schema, tabname):
         tables = []
         tables_set = ibm_db.tables(conn, None, schema)
@@ -191,7 +190,8 @@ class DummyInsert:
             return True
 
         return False    
-    
+   
+    # check whether or not the column is the parameter marker 
     def chk_par_mark(self, count, sql):
         rc = False
         par_val = re.split("VALUES[ ]+", sql)[1].split(",")
