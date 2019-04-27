@@ -97,20 +97,15 @@
  9      d7URwC47E9DD1jU 4P5      2018-02-10   28888  6119592.45   570743.94  
 
 
- 3. Bulk insert
- This example ran in 312 seconds in my environment.
+ 3. Bulk insert  
+ This 1,000,000 insert example ran in 312 seconds in my environment.
 
  $ cat insert.sql
  INSERT INTO EMPLOYEE VALUES (NEXT VALUE FOR seq_empno, ?, ?, ?, ?, ? ,?)
 
  $ python dummy_insert.py -d TESTDB -f insert.sql -r 1000000
-
- $ db2 "select count(*) from EMPLOYEE"
- 1
- -----------  
-     1000000  
-
-
+ 
+ 
 # Requirement
 
  python2.7, db2, ibm_db
