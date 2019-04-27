@@ -103,7 +103,23 @@
  `$ cat insert.sql`  
  `INSERT INTO EMPLOYEE VALUES (NEXT VALUE FOR seq_empno, ?, ?, ?, ?, ? ,?)`
 
- `$ python dummy_insert.py -d TESTDB -f insert.sql -r 1000000`
+ `$ python dummy_insert.py -d TESTDB -f insert.sql -r 1000000`  
+ 
+ `$ db2 "select count(*) from EMPLOYEE"`
+ 
+    1
+    -----------
+        1000000
+    
+ `$ db2 "select * from EMPLOYEE order by INTEGER(EMPNO)" | tail`
+ 
+    999993 lJf2fkOtVLdt 8pr      2011-03-21    5410  1881059.41  9978670.79
+    999994 U8xlY1ZU83fk CtZ      2015-12-23   25629  9939366.38   163365.14
+    999995 NIGEcOn1FAju ZEa      2017-07-17   21347  9826046.86  5398803.83
+    999996 TgdLAxGHBRl0 R4k      2010-01-09    9805  7114331.35  1997074.28
+    999997 LGKVnqCm6vZU m0S      2013-06-24    7350  4040582.61  9101479.18
+    999998 f2mZ7OAj9Q95 tEf      2012-09-19    9608  8481912.74   788261.46
+    999999 px8b6uPNg4EU UKI      2003-11-13    8245  5424813.68  2262311.08
  
  
 # Requirement
@@ -119,7 +135,7 @@
 
    - INPUT_FILE  
        The file of a insert sql with some parameter markers. And you can 
-       set to some sequence objects in the sql.
+       set some sequence objects in your sql.
 
        ex)  
          - INSERT INTO TABLE1 VALUES (?, ?, ?, ?, ?)  
