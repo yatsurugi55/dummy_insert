@@ -74,7 +74,7 @@
  dcAAbf G9hInP6Yne8O2TE kDu      2015-10-03    9281  3719330.84  7481345.00  
 
 
- 2. With sequence object column 
+ 2. With sequence object column  
  
  $ cat insert.sql  
  INSERT INTO EMPLOYEE VALUES (NEXT VALUE FOR seq_empno, ?, ?, ?, ?, ? ,?)  
