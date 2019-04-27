@@ -76,7 +76,7 @@
 
  2. With sequence object column 
  
- $ cat insert.sql
+ $ cat insert.sql  
  INSERT INTO EMPLOYEE VALUES (NEXT VALUE FOR seq_empno, ?, ?, ?, ?, ? ,?)  
 
  $ python dummy_insert.py -d TESTDB -f insert.sql -r 10
@@ -99,8 +99,7 @@
 
  3. Bulk insert  
  This 1,000,000 insert example ran in 312 seconds in my environment.
-
- $ cat insert.sql
+ $ cat insert.sql  
  INSERT INTO EMPLOYEE VALUES (NEXT VALUE FOR seq_empno, ?, ?, ?, ?, ? ,?)
 
  $ python dummy_insert.py -d TESTDB -f insert.sql -r 1000000
