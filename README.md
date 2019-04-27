@@ -58,12 +58,12 @@
 
  ## 1. All random data columns
 
- $ cat insert.sql  
+ `$ cat insert.sql`  
  INSERT INTO EMPLOYEE VALUES (?, ?, ?, ?, ?, ?, ?)
 
- $ python dummy_insert.py -d TESTDB -f insert.sql -r 5
+ `$ python dummy_insert.py -d TESTDB -f insert.sql -r 5`
 
- $ db2 "select * from EMPLOYEE"
+ `$ db2 "select * from EMPLOYEE"`
 
  EMPNO  NAME            WORKDEPT HIREDATE   EDLEVEL SALARY      BONUS  
  ------ --------------- -------- ---------- ------- ----------- -----------  
