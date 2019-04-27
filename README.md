@@ -9,50 +9,50 @@
  This tool generates appropriate dummy data to match the table columns.  
  The set of the column types and the dummy value is below.  
 
- - CHAR(n)
-    random n characters
+ - CHAR(n)  
+ random n characters
 
- - VARCHAR(n)
-    random n characters
+ - VARCHAR(n)  
+ random n characters
 
- - SMALLINT
-    a random integer between 0 and 2^15 - 1
+ - SMALLINT  
+ a random integer between 0 and 2^15 - 1
 
- - INTEGER
-    a random integer between 0 and 2^31 - 1
+ - INTEGER  
+ a random integer between 0 and 2^31 - 1
 
- - BIGINT
-    a random integer between 0 and 2^63 - 1
+ - BIGINT  
+ a random integer between 0 and 2^63 - 1
 
- - REAL
-    a random decimal between minimum of positive binary32 and maximum binary32
+ - REAL  
+ a random decimal between minimum of positive binary32 and maximum binary32
 
- - FLOAT
-    a random decimal between minimum of positive binary64 and maximum binary64
+ - FLOAT  
+ a random decimal between minimum of positive binary64 and maximum binary64
   
- - DOUBLE
-    a random decimal between minimum of positive binary64 and maximum binary64
+ - DOUBLE  
+ a random decimal between minimum of positive binary64 and maximum binary64
 
- - DECIMAL(m, n)
-    a random decimal between 0 and 10 * (m - n)
+ - DECIMAL(m, n)  
+ a random decimal between 0 and 10 * (m - n)
 
- - NUMERIC(m, n)
-    a random decimal between 0 and 10 * (m - n)
+ - NUMERIC(m, n)  
+ a random decimal between 0 and 10 * (m - n)
 
- - DATE
-    a random date between 2000/1/1 and the execution date
+ - DATE  
+ a random date between 2000/1/1 and the execution date
 
- - TIME
-    a random time between 00:00:00 and 23:59:59
+ - TIME  
+ a random time between 00:00:00 and 23:59:59
 
- - TIMESTAMP
-    a random timestamp between 2000/1/1 00:00:00 and the execution datetime
+ - TIMESTAMP  
+ a random timestamp between 2000/1/1 00:00:00 and the execution datetime
 
- - BLOB(n)
-    random n bytes
+ - BLOB(n)  
+ random n bytes
 
- - CLOB(n)
-    random n characters
+ - CLOB(n)  
+ random n characters
     
 # Demo
 
