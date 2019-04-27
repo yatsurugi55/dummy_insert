@@ -56,9 +56,9 @@
     
 # Demo
 
- 1. All random data columns
+ ## 1. All random data columns
 
- $ cat insert.sql
+ $ cat insert.sql  
  INSERT INTO EMPLOYEE VALUES (?, ?, ?, ?, ?, ?, ?)
 
  $ python dummy_insert.py -d TESTDB -f insert.sql -r 5
@@ -74,9 +74,9 @@
  dcAAbf G9hInP6Yne8O2TE kDu      2015-10-03    9281  3719330.84  7481345.00  
 
 
- 2. With sequence object column  
+ ## 2. With sequence object column  
  
- $ cat insert.sql  
+ `$ cat insert.sql`  
  INSERT INTO EMPLOYEE VALUES (NEXT VALUE FOR seq_empno, ?, ?, ?, ?, ? ,?)  
 
  $ python dummy_insert.py -d TESTDB -f insert.sql -r 10
@@ -97,7 +97,7 @@
  9      d7URwC47E9DD1jU 4P5      2018-02-10   28888  6119592.45   570743.94  
 
 
- 3. Bulk insert  
+ ## 3. Bulk insert  
  This 1,000,000 insert example ran in 312 seconds in my environment.  
    
  $ cat insert.sql  
@@ -114,10 +114,10 @@
 
  usage: dummy_insert.py [-h] -d DBNAME -f INPUT_FILE [-r ROWS]
 
-   - DBNAME
+   - DBNAME  
        Your db2 database name
 
-   - INPUT_FILE
+   - INPUT_FILE  
        The file of a insert sql with some parameter markers. And you can 
        set to some sequence objects in the sql.
 
@@ -125,7 +125,7 @@
          - INSERT INTO TABLE1 VALUES (?, ?, ?, ?, ?)  
          - INSERT INTO TABLE2 VALUES (NEXT VALUE FOR seq_obj, ?, ?)  
 
-   - ROWS
+   - ROWS  
        The row number you want to insert to db.
        (the transaction will execute commit each 1000 rows)
        
