@@ -65,13 +65,13 @@
 
  `$ db2 "select * from EMPLOYEE"`
 
- EMPNO  NAME            WORKDEPT HIREDATE   EDLEVEL SALARY      BONUS  
- ------ --------------- -------- ---------- ------- ----------- -----------  
- LUmgkB UKjE3aIlQng9hIR dKX      2017-03-30   15396  3795350.65  5271653.16  
- iG9u4z UDqnPq5IBCk8oek 2xh      2012-02-09   12280  9535687.58  7452416.87  
- crqdKq JjGFqtAPFWWWjDb EX2      2017-06-16   25585  3580199.77  3314787.84  
- pkU65i sonIxHJMynZO8Kn 87B      2008-03-07   29357  6566233.61  7845889.90  
- dcAAbf G9hInP6Yne8O2TE kDu      2015-10-03    9281  3719330.84  7481345.00  
+    EMPNO  NAME            WORKDEPT HIREDATE   EDLEVEL SALARY      BONUS  
+    ------ --------------- -------- ---------- ------- ----------- -----------  
+    LUmgkB UKjE3aIlQng9hIR dKX      2017-03-30   15396  3795350.65  5271653.16  
+    iG9u4z UDqnPq5IBCk8oek 2xh      2012-02-09   12280  9535687.58  7452416.87  
+    crqdKq JjGFqtAPFWWWjDb EX2      2017-06-16   25585  3580199.77  3314787.84  
+    pkU65i sonIxHJMynZO8Kn 87B      2008-03-07   29357  6566233.61  7845889.90  
+    dcAAbf G9hInP6Yne8O2TE kDu      2015-10-03    9281  3719330.84  7481345.00  
 
 
  ## 2. With sequence object column  
