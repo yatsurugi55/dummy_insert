@@ -7,7 +7,7 @@
 # Description
 
  This tool generates appropriate dummy data to match the table columns.  
- The set of the column types and the random value is below.  
+ The set of the column types and the dummy value is below.  
 
  - CHAR(n)
     random n characters
@@ -56,7 +56,7 @@
     
 # Demo
 
- ## 1. All random data columns
+ ## 1. All dummy data columns
 
  `$ cat insert.sql`  
  `INSERT INTO EMPLOYEE VALUES (?, ?, ?, ?, ?, ?, ?)`
